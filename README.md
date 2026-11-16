@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **Aurevix** is an enterprise-grade, accessibility-first multimodal desktop interaction platform that replaces physical computer input peripherals (mouse and keyboard) with contactless **computer vision hand tracking** and **natural voice intelligence**.
 
@@ -21,18 +21,18 @@ Designed for high precision, real-time latency (<16ms, 60 FPS), and accessibilit
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- **🖐️ 3D Optical Hand Tracking**: 21 3D coordinates tracked in real time using MediaPipe Hands pipeline.
-- **⚡ O(1) Exponential Moving Average (EMA) Smoothing**: Circular ring buffer to eliminate high-frequency hand tremors and micro-jitters without input lag.
-- **🎙️ Nova Voice Assistant**: Natural speech control engine with multi-threaded listening and instant OS-level system triggers.
-- **🔐 Hybrid Cloud Authentication**: Enterprise Google OAuth 2.0 PKCE loopback authentication + Supabase Cloud PostgreSQL with seamless offline SQLite caching.
-- **🎨 Glassmorphic Desktop GUI**: Modern dark-mode interface built with PyQt5, featuring live gesture visualizers, customizable sensitivities, and calibration telemetry.
-- **🖥️ Native Windows Executable**: Zero-dependency standalone build packaged via PyInstaller with hardware-accelerated webcam and audio pipelines.
+- ** 3D Optical Hand Tracking**: 21 3D coordinates tracked in real time using MediaPipe Hands pipeline.
+- ** O(1) Exponential Moving Average (EMA) Smoothing**: Circular ring buffer to eliminate high-frequency hand tremors and micro-jitters without input lag.
+- ** Nova Voice Assistant**: Natural speech control engine with multi-threaded listening and instant OS-level system triggers.
+- ** Hybrid Cloud Authentication**: Enterprise Google OAuth 2.0 PKCE loopback authentication + Supabase Cloud PostgreSQL with seamless offline SQLite caching.
+- ** Glassmorphic Desktop GUI**: Modern dark-mode interface built with PyQt5, featuring live gesture visualizers, customizable sensitivities, and calibration telemetry.
+- ** Native Windows Executable**: Zero-dependency standalone build packaged via PyInstaller with hardware-accelerated webcam and audio pipelines.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ flowchart TD
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 Aurevix/
@@ -96,7 +96,7 @@ Aurevix/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -150,7 +150,7 @@ Or simply double-click `Launch_Aurevix.bat` on Windows.
 
 ---
 
-## 📊 Database Schema (Supabase PostgreSQL)
+## Database Schema (Supabase PostgreSQL)
 
 The platform utilizes a structured relational database with Row Level Security (RLS) on Supabase:
 - `users`: Core profile data, display names, and authentication mapping.
@@ -163,7 +163,7 @@ Execute `supabase_schema.sql` in the Supabase SQL Editor to initialize all table
 
 ---
 
-## 👥 Authors & Academic Affiliation
+## Authors & Academic Affiliation
 
 Developed as part of the Final Year Capstone Project (Academic Year 2025–2026):
 
@@ -179,6 +179,6 @@ Developed as part of the Final Year Capstone Project (Academic Year 2025–2026)
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
