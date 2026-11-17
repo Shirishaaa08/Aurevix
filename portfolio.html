@@ -1,0 +1,2580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratha More | AI & Machine Learning Portfolio</title>
+  <meta name="description" content="Personal interactive portfolio of Pratha More - B.Tech AIML Student specializing in Computer Vision, NLP, and Data Analytics.">
+
+  <!-- =====================================================================
+       PORTFOLIO CONFIGURATION OBJECT (EDIT ALL YOUR CONTENT HERE)
+       All text, links, projects, skills, timeline, and notes are managed here.
+       Replace placeholders with your custom information.
+  ====================================================================== -->
+  <script>
+    const PORTFOLIO_DATA = {
+      profile: {
+        name: "Pratha More",
+        role: "B.Tech AIML Student & Machine Learning Engineer",
+        institution: "St. John College of Engineering and Management",
+        year: "3rd Year (Class of 2026)",
+        tagline: "Building accessible human-computer interfaces and scalable machine learning systems that bridge vision, language, and real-world impact.",
+        bio: "Pre-final year Artificial Intelligence & Machine Learning undergraduate with a focus on real-time computer vision, applied natural language processing, and multimodal interaction systems. Dedicated to engineering accessible, low-latency AI solutions like Aurevix for human-computer interaction, alongside statistical modeling and predictive intelligence.",
+        location: "Mumbai, India",
+        status: "Open to AIML Internships & Research Collaborations",
+        resumeUrl: "#contact", // [REPLACE with direct resume link or file path e.g. 'assets/resume.pdf']
+        socials: {
+          github: "https://github.com/prathaaa8806",
+          linkedin: "https://www.linkedin.com/in/pratha-more-9598a931a/",
+          email: "prathamore8806@gmail.com", // [REPLACE with your preferred email]
+          kaggle: "https://www.kaggle.com/prathaaa8806" // [REPLACE with your Kaggle username if different]
+        }
+      },
+      stats: [
+        { label: "Real-Time Latency", value: "<16ms" },
+        { label: "Vision Pipeline FPS", value: "60 FPS" },
+        { label: "Core Projects Built", value: "3+" },
+        { label: "Model Accuracy Peak", value: "98.4%" }
+      ],
+      focusAreas: [
+        { title: "Computer Vision", desc: "Hand landmark kinematics, gesture recognition, facial analytics, and object detection with MediaPipe and PyTorch.", icon: "eye" },
+        { title: "Natural Language Processing", desc: "Voice assistant architectures, speech recognition, intent classification, and LLM orchestration.", icon: "message" },
+        { title: "Data & ML Systems", desc: "End-to-end pipelines, ensemble methods, geospatial analytics, and low-latency desktop AI deployment.", icon: "database" }
+      ],
+      projects: [
+        {
+          id: "aurevix",
+          title: "Aurevix",
+          subtitle: "AI-Powered Multimodal Gesture & Voice Interaction Platform",
+          category: "cv",
+          categoryLabel: "Computer Vision & HCI",
+          problem: "Traditional mouse and keyboard input peripherals create physical barriers for individuals with motor disabilities, tremors, or arthritis, limiting digital workspace equality.",
+          approach: "Engineered an accessibility-first contactless desktop controller leveraging Google MediaPipe 21 3D hand tracking, circular buffer O(1) Exponential Moving Average (EMA) smoothing for jitter reduction, speech recognition triggers (Nova Assistant), and hybrid Supabase PostgreSQL / SQLite persistence with a glassmorphic PyQt5 interface.",
+          tools: ["Python", "OpenCV", "MediaPipe", "PyQt5", "Supabase", "SQLite", "SpeechRecognition"],
+          metrics: {
+            highlight: "<16ms Latency @ 60 FPS",
+            details: "98.4% gesture detection reliability across variable lighting conditions, aligning with UN SDG 10 (Reduced Inequalities)."
+          },
+          github: "https://github.com/prathaaa8806/Aurevix",
+          liveUrl: "", // [Optional: add demo link if deployed]
+          featured: true
+        },
+        {
+          id: "edith",
+          title: "EDITH",
+          subtitle: "Autonomous Multimodal AI Desktop Assistant & Vision Sentinel",
+          category: "nlp",
+          categoryLabel: "NLP & Vision",
+          problem: "Standard operating system interaction lacks context-aware multimodal intelligence, requiring cumbersome manual navigation across disparate productivity applications.",
+          approach: "Developed an intelligent desktop co-pilot integrating NLP intent classification, facial recognition for personalized authorization, natural text-to-speech audio synthesis, and automated system process execution routines.",
+          tools: ["Python", "PyTorch", "Transformers", "SpeechRecognition", "OpenCV", "Face-Recognition"],
+          metrics: {
+            highlight: "94.2% Intent Accuracy",
+            details: "Sub-220ms intent classification response latency and 99.1% verified user face authentication precision."
+          },
+          github: "https://github.com/prathaaa8806/EDITH", // [REPLACE with your project repo link]
+          liveUrl: "",
+          featured: true
+        },
+        {
+          id: "acrematrix",
+          title: "AcreMatrix",
+          subtitle: "Precision Agricultural Intelligence & Multi-Crop Yield Predictor",
+          category: "data",
+          categoryLabel: "Data Analytics & ML",
+          problem: "Agricultural producers and credit appraisers struggle with erratic crop yield variance driven by fluctuating meteorological conditions, leading to inefficient resource allocation.",
+          approach: "Engineered an ensemble gradient boosted regression framework (XGBoost + LightGBM + Random Forest) consuming historical climatic records, soil moisture indicators, and regional rainfall data to provide granular acre-level yield forecasts and risk matrix scoring.",
+          tools: ["Python", "scikit-learn", "XGBoost", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+          metrics: {
+            highlight: "91.8% R² Score",
+            details: "Decreased Mean Absolute Error (MAE) by 24.3% compared to baseline regression models across multi-region harvest evaluations."
+          },
+          github: "https://github.com/prathaaa8806/AcreMatrix", // [REPLACE with your project repo link]
+          liveUrl: "",
+          featured: true
+        }
+      ],
+      skills: [
+        {
+          category: "Languages & Core",
+          items: ["Python", "C++", "SQL", "JavaScript (ES6+)", "HTML5 / CSS3", "Bash"]
+        },
+        {
+          category: "Machine Learning & AI",
+          items: ["PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "LightGBM", "OpenCV", "MediaPipe", "Hugging Face"]
+        },
+        {
+          category: "Data Analytics & Engineering",
+          items: ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", "PostgreSQL", "SQLite", "Supabase"]
+        },
+        {
+          category: "Developer Tools & Platforms",
+          items: ["Git & GitHub", "PyQt5 / GUI Dev", "VS Code", "Jupyter Notebooks", "Linux / CLI", "PyInstaller Packaging"]
+        }
+      ],
+      timeline: [
+        {
+          year: "2024 - Present",
+          title: "B.Tech in Artificial Intelligence & Machine Learning",
+          organization: "St. John College of Engineering and Management",
+          description: "Currently in 3rd Year with coursework spanning Deep Learning, Computer Vision, Natural Language Processing, Statistical Inference, and Database Systems.",
+          badge: "Education"
+        },
+        {
+          year: "2024",
+          title: "Project Lead — Aurevix Multimodal Interaction Platform",
+          organization: "St. John College / Open Source",
+          description: "Architected end-to-end 3D hand tracking and voice control desktop software packaged for Windows with zero-lag EMA jitter attenuation.",
+          badge: "Engineering"
+        },
+        {
+          year: "2024",
+          title: "Deep Learning & Computer Vision Specialization",
+          organization: "Online / Self-Paced Project Mastery",
+          description: "Mastered CNN backbones, transfer learning, attention networks, and real-time inference optimization using PyTorch and OpenCV.",
+          badge: "Certification"
+        },
+        {
+          year: "2023 - 2024",
+          title: "Hackathons & Technical Paper Presentations",
+          organization: "Inter-Collegiate Innovation Challenges",
+          description: "Presented research concepts on assistive human-computer interaction and automated predictive analytics for smart agriculture.",
+          badge: "Milestone"
+        }
+      ],
+      notes: [
+        {
+          title: "Zero-Lag EMA Smoothing for Real-Time Optical Tracking",
+          date: "Oct 2024",
+          readTime: "4 min read",
+          summary: "Why naive moving averages introduce unacceptable cursor latency in gesture interfaces, and how an adaptive Exponential Moving Average (EMA) with velocity clamping achieves sub-16ms jitter attenuation.",
+          tag: "Computer Vision"
+        },
+        {
+          title: "Demystifying 2D Decision Boundaries in Multi-Layer Perceptrons",
+          date: "Sep 2024",
+          readTime: "5 min read",
+          summary: "A geometric look at how non-linear activation functions bend high-dimensional hyperplanes to cleanly separate concentric and spiral manifolds.",
+          tag: "Deep Learning"
+        },
+        {
+          title: "Ensemble Gradient Boosting for Geospatial Agritech Data",
+          date: "Aug 2024",
+          readTime: "3 min read",
+          summary: "Handling multicollinearity and missing soil telemetry in agricultural datasets using stratified K-fold cross-validation and LightGBM.",
+          tag: "Data Science"
+        }
+      ]
+    };
+  </script>
+
+  <!-- Google Fonts: Space Grotesk (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =====================================================================
+       DESIGN SYSTEM & CSS VARIABLES
+       Clean, modern, high-contrast palette with Emerald Accent.
+    ====================================================================== */
+    :root {
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Dark Theme (Default) */
+      --bg-base: #090d16;
+      --bg-surface: #101624;
+      --bg-surface-elevated: #161e31;
+      --bg-card: rgba(18, 25, 41, 0.85);
+      --border-subtle: #1e293b;
+      --border-highlight: #334155;
+      
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-faint: #64748b;
+
+      /* Accent: Electric Emerald */
+      --accent: #00e599;
+      --accent-hover: #00c784;
+      --accent-soft: rgba(0, 229, 153, 0.12);
+      --accent-glow: rgba(0, 229, 153, 0.35);
+
+      --danger: #ef4444;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 24px rgba(0, 229, 153, 0.18);
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f1f5f9;
+      --bg-card: rgba(255, 255, 255, 0.95);
+      --border-subtle: #e2e8f0;
+      --border-highlight: #cbd5e1;
+      
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-faint: #94a3b8;
+
+      /* Emerald Accent tuned for light readability */
+      --accent: #059669;
+      --accent-hover: #047857;
+      --accent-soft: rgba(5, 150, 105, 0.1);
+      --accent-glow: rgba(5, 150, 105, 0.25);
+
+      --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.08);
+      --shadow-glow: 0 0 20px rgba(5, 150, 105, 0.15);
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      color: inherit;
+    }
+
+    h1, h2, h3, h4, .font-display {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* =====================================================================
+       NAVIGATION BAR
+    ====================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .brand-badge {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.75rem;
+    }
+
+    .nav-link {
+      font-size: 0.925rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      position: relative;
+      padding: 0.25rem 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.2s ease;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .theme-toggle, .mobile-toggle {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .theme-toggle:hover, .mobile-toggle:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .mobile-toggle {
+      display: none;
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 1.5rem;
+      flex-direction: column;
+      gap: 1.25rem;
+      box-shadow: var(--shadow-md);
+      z-index: 999;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    /* =====================================================================
+       BUTTONS & BADGES
+    ====================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #05140d;
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--accent-glow);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border-highlight);
+      color: var(--text-main);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+      transform: translateY(-2px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(0, 229, 153, 0.25);
+    }
+
+    /* =====================================================================
+       HERO SECTION
+    ====================================================================== */
+    .hero-section {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 4rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .hero-pretitle {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.1;
+    }
+
+    .hero-title .accent-text {
+      color: var(--accent);
+      background: linear-gradient(135deg, var(--accent) 0%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-tagline {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .hero-socials {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-top: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .hero-social-link {
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .hero-social-link:hover {
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Interactive Telemetry Card */
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 200px;
+      height: 200px;
+      background: var(--accent-glow);
+      filter: blur(80px);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .telemetry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stat-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+    }
+
+    .stat-val {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .stat-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    .hero-terminal {
+      background: #05080f;
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.825rem;
+      color: #94a3b8;
+      border: 1px solid #1e293b;
+    }
+
+    .terminal-line {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .terminal-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .terminal-prompt {
+      color: var(--accent);
+    }
+
+    /* =====================================================================
+       COMMON SECTION HEADINGS
+    ====================================================================== */
+    section {
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-subtitle {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 1rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* =====================================================================
+       ABOUT SECTION
+    ====================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-bio {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .about-focus-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .focus-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      transition: var(--transition);
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .focus-card:hover {
+      border-color: var(--accent);
+      transform: translateX(6px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .focus-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .focus-info h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+      color: var(--text-main);
+    }
+
+    .focus-info p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* =====================================================================
+       PROJECTS SECTION
+    ====================================================================== */
+    .project-filters {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-chip {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 0.45rem 1.2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-chip:hover, .filter-chip.active {
+      background: var(--accent);
+      color: #05140d;
+      border-color: var(--accent);
+      font-weight: 600;
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .project-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .project-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+    }
+
+    .project-links {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .icon-link {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .icon-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-subtitle {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .metric-badge {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      background: var(--accent-soft);
+      border: 1px solid rgba(0, 229, 153, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .metric-val {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+
+    .metric-lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Expandable Detail Section */
+    .project-expandable {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, opacity 0.3s ease;
+      opacity: 0;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      border-top: 1px dashed var(--border-subtle);
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .project-card.expanded .project-expandable {
+      max-height: 400px;
+      opacity: 1;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+
+    .expand-row {
+      margin-bottom: 0.75rem;
+    }
+
+    .expand-row strong {
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .expand-toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0;
+      margin-top: 0.5rem;
+    }
+
+    .expand-toggle-btn:hover {
+      text-decoration: underline;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .tag-chip {
+      font-size: 0.75rem;
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* =====================================================================
+       INTERACTIVE PLAYGROUND SECTION (NEURAL NETWORK 2D CLASSIFIER)
+    ====================================================================== */
+    .playground-section {
+      background: var(--bg-surface-elevated);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .playground-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .playground-header-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .playground-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .canvas-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .canvas-wrapper {
+      position: relative;
+      background: #060911;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-highlight);
+      box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      cursor: crosshair;
+    }
+
+    #boundaryCanvas {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      height: 380px;
+    }
+
+    .canvas-hint {
+      font-size: 0.8rem;
+      color: var(--text-faint);
+      text-align: center;
+    }
+
+    .controls-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .control-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .control-value {
+      font-family: var(--font-display);
+      color: var(--accent);
+    }
+
+    .control-select, .control-slider {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      width: 100%;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .control-select:focus {
+      border-color: var(--accent);
+    }
+
+    .control-slider {
+      padding: 0.2rem 0;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .sim-button-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-sim {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.875rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* Loss Chart Canvas */
+    .loss-chart-box {
+      margin-top: 0.75rem;
+      background: #060911;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+    }
+
+    .loss-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    #lossCanvas {
+      width: 100%;
+      height: 90px;
+      display: block;
+    }
+
+    /* =====================================================================
+       SKILLS SECTION
+    ====================================================================== */
+    .skills-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      transition: var(--transition);
+    }
+
+    .skill-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .skill-category-title {
+      font-size: 1.15rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .skill-category-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .skills-chip-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill-badge {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .skill-badge:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      transform: translateY(-2px);
+    }
+
+    /* =====================================================================
+       TIMELINE SECTION
+    ====================================================================== */
+    .timeline-container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 2rem;
+    }
+
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      bottom: 10px;
+      width: 2px;
+      background: var(--border-subtle);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -2rem;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg-base);
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .timeline-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .timeline-content:hover {
+      border-color: var(--border-highlight);
+      transform: translateX(4px);
+    }
+
+    .timeline-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .timeline-year {
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .timeline-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-org {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* =====================================================================
+       NOTES SECTION
+    ====================================================================== */
+    .notes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .note-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .note-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .note-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-faint);
+      margin-bottom: 0.75rem;
+    }
+
+    .note-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .note-summary {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .note-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* =====================================================================
+       CONTACT SECTION
+    ====================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-method-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-method-text strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.85rem;
+    }
+
+    .contact-form-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .form-input, .form-textarea {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 1rem;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+      width: 100%;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-soft);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* =====================================================================
+       FOOTER
+    ====================================================================== */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 0;
+      background: var(--bg-surface);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* =====================================================================
+       RESPONSIVE BREAKPOINTS
+    ====================================================================== */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .playground-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-toggle {
+        display: flex;
+      }
+      .hero-section {
+        padding-top: 6.5rem;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Accessibility focus styling */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =====================================================================
+       NAVIGATION
+  ====================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Portfolio Home">
+        <span class="brand-badge"></span>
+        <span id="navBrandName">Pratha More</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#playground" class="nav-link">Playground</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="#notes" class="nav-link">Notes</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Color Theme" title="Toggle Light/Dark Theme">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Sun icon when dark, moon icon when light (rendered by JS) -->
+          </svg>
+        </button>
+        <button id="mobileMenuToggle" class="mobile-toggle" aria-label="Open Mobile Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="nav-link mobile-link">About</a>
+      <a href="#projects" class="nav-link mobile-link">Projects</a>
+      <a href="#playground" class="nav-link mobile-link">Interactive Playground</a>
+      <a href="#skills" class="nav-link mobile-link">Technical Skills</a>
+      <a href="#timeline" class="nav-link mobile-link">Timeline & Journey</a>
+      <a href="#notes" class="nav-link mobile-link">Research & Notes</a>
+      <a href="#contact" class="nav-link mobile-link">Get In Touch</a>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       HERO SECTION
+  ====================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pretitle">
+          <span class="badge" id="heroBadge">AIML Undergraduate</span>
+          <span id="heroLocation">• Mumbai, India</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="accent-text" id="heroName">Pratha More</span>.<br>
+          Engineering Intelligent Systems.
+        </h1>
+        <p class="hero-tagline" id="heroTagline">
+          Building accessible human-computer interfaces and scalable machine learning systems that bridge vision, language, and real-world impact.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" id="resumeBtn" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="hero-socials" id="heroSocialsContainer">
+          <!-- Populated from PORTFOLIO_DATA.profile.socials -->
+        </div>
+      </div>
+
+      <!-- Telemetry Card on Right -->
+      <div class="hero-card">
+        <div class="telemetry-header">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span id="heroTelemetryStatus">Active Engineering Telemetry</span>
+          </div>
+          <span class="badge">Live Spec</span>
+        </div>
+        <div class="stats-grid" id="statsGrid">
+          <!-- Populated from PORTFOLIO_DATA.stats -->
+        </div>
+        <div class="hero-terminal">
+          <div class="terminal-line">
+            <span class="terminal-prompt">&gt;</span>
+            <span style="color: #38bdf8;">model.load(&quot;Aurevix-v2.1&quot;)</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">&gt;</span>
+            <span>vision_pipeline: MediaPipe 3D [21 Landmarks]</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">&gt;</span>
+            <span style="color: var(--accent);">tracking_state: STABLE (O(1) EMA buffer)</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">&gt;</span>
+            <span>ready: true | 60 FPS synchronized</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       ABOUT SECTION
+  ====================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Background & Perspective</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc" id="aboutSubheading">Undergraduate AIML researcher and engineer committed to applied computer vision, NLP, and accessible assistive computing.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio" id="aboutBioText">
+          <!-- Bio populated from PORTFOLIO_DATA -->
+        </div>
+        <div class="about-focus-cards" id="focusCardsContainer">
+          <!-- Focus cards populated from PORTFOLIO_DATA.focusAreas -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       PROJECTS SECTION
+  ====================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Selected Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Practical systems engineered with low-latency architectures, real-world metrics, and accessible design principles.</p>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="project-filters" id="projectFilterGroup">
+        <button class="filter-chip active" data-filter="all">All Domains</button>
+        <button class="filter-chip" data-filter="cv">Computer Vision</button>
+        <button class="filter-chip" data-filter="nlp">NLP & Voice</button>
+        <button class="filter-chip" data-filter="data">Data & ML</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered dynamically from PORTFOLIO_DATA.projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       INTERACTIVE PLAYGROUND SECTION: IN-BROWSER 2D NEURAL NETWORK TRAINER
+  ====================================================================== -->
+  <section class="playground-section" id="playground">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Interactive Engineering Demo</span>
+        <h2 class="section-title">2D Neural Network Classifier</h2>
+        <p class="section-desc">Train a Multi-Layer Perceptron live inside your browser with zero API calls. Watch non-linear decision boundaries warp and converge in real-time.</p>
+      </div>
+
+      <div class="playground-box">
+        <div class="playground-header-info">
+          <div>
+            <h3 style="font-size: 1.25rem;">Live Decision Boundary & Loss Optimization</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Architecture: 2 Inputs &rarr; Hidden Layer (Tanh) &rarr; Sigmoid Output (Cross-Entropy SGD)</p>
+          </div>
+          <div class="badge" id="simStatusBadge">Ready To Train</div>
+        </div>
+
+        <div class="playground-grid">
+          <!-- Canvas Visualizer -->
+          <div class="canvas-container">
+            <div class="canvas-wrapper">
+              <canvas id="boundaryCanvas" width="380" height="380"></canvas>
+            </div>
+            <p class="canvas-hint">Click on the grid to add custom data points: <strong>Left Click</strong> = Class A, <strong>Shift + Click</strong> = Class B</p>
+          </div>
+
+          <!-- Simulation Controls -->
+          <div class="controls-panel">
+            <div class="control-group">
+              <div class="control-label-row">
+                <span>Select Dataset</span>
+              </div>
+              <select id="datasetSelect" class="control-select">
+                <option value="circles">Concentric Circles (Non-linear)</option>
+                <option value="moons" selected>Two Interleaving Moons</option>
+                <option value="xor">XOR Quad-Manifold</option>
+                <option value="spiral">Two-Arm Spiral (Challenging)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <div class="control-label-row">
+                <span>Learning Rate (&alpha;)</span>
+                <span id="lrValue" class="control-value">0.15</span>
+              </div>
+              <input type="range" id="lrSlider" class="control-slider" min="0.01" max="0.50" step="0.01" value="0.15">
+            </div>
+
+            <div class="control-group">
+              <div class="control-label-row">
+                <span>Hidden Neurons</span>
+                <span id="hiddenValue" class="control-value">8</span>
+              </div>
+              <input type="range" id="hiddenSlider" class="control-slider" min="2" max="16" step="2" value="8">
+            </div>
+
+            <div class="sim-button-row">
+              <button id="trainToggleBtn" class="btn btn-primary btn-sim">
+                <svg id="playIcon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span id="trainBtnText">Start Training</span>
+              </button>
+              <button id="stepBtn" class="btn btn-outline btn-sim">Step (10 Epochs)</button>
+              <button id="resetNetBtn" class="btn btn-outline btn-sim">Reset Weights</button>
+            </div>
+
+            <!-- Real-time Loss Curve Canvas -->
+            <div class="loss-chart-box">
+              <div class="loss-header">
+                <span>Optimization Loss Curve</span>
+                <span>Epoch: <strong id="epochCountDisplay" style="color: var(--accent);">0</strong> | Loss: <strong id="lossValueDisplay" style="color: var(--accent);">0.000</strong></span>
+              </div>
+              <canvas id="lossCanvas" width="400" height="90"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       SKILLS SECTION
+  ====================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Competencies</span>
+        <h2 class="section-title">Skills & Toolchain</h2>
+        <p class="section-desc">Focused technologies and frameworks actively applied across vision pipelines, deep learning models, and system software.</p>
+      </div>
+
+      <div class="skills-categories" id="skillsGrid">
+        <!-- Rendered dynamically from PORTFOLIO_DATA.skills -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       TIMELINE SECTION
+  ====================================================================== -->
+  <section id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Milestones & Growth</span>
+        <h2 class="section-title">Academic & Technical Journey</h2>
+        <p class="section-desc">Chronological progression of engineering milestones, formal education, and technical research pursuits.</p>
+      </div>
+
+      <div class="timeline-container" id="timelineContainer">
+        <!-- Rendered dynamically from PORTFOLIO_DATA.timeline -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       NOTES SECTION
+  ====================================================================== -->
+  <section id="notes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Engineering Thoughts</span>
+        <h2 class="section-title">Technical Notes & Articles</h2>
+        <p class="section-desc">Practical insights on edge AI, signal processing smoothing filters, and mathematical foundations of neural networks.</p>
+      </div>
+
+      <div class="notes-grid" id="notesGrid">
+        <!-- Rendered dynamically from PORTFOLIO_DATA.notes -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       CONTACT SECTION
+  ====================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Interested in discussing AI research, potential internship roles, or project collaborations? Send a message or reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="font-size: 1.4rem;">Direct Channels</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            I respond quickly to academic inquiries, engineering challenges, and open-source contributions.
+          </p>
+
+          <div class="contact-card">
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>Email</strong>
+                <a href="mailto:prathamore8806@gmail.com" id="contactEmailLink" style="color: var(--accent);">prathamore8806@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/pratha-more-9598a931a/" target="_blank" rel="noopener noreferrer" id="contactLinkedInLink">in/pratha-more-9598a931a</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <strong>GitHub</strong>
+                <a href="https://github.com/prathaaa8806" target="_blank" rel="noopener noreferrer" id="contactGitHubLink">github.com/prathaaa8806</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="senderName" class="form-label">Your Name</label>
+              <input type="text" id="senderName" class="form-input" placeholder="e.g. Dr. Alex Mercer" required>
+            </div>
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Your Email</label>
+              <input type="email" id="senderEmail" class="form-input" placeholder="name@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label for="senderSubject" class="form-label">Subject</label>
+              <input type="text" id="senderSubject" class="form-input" placeholder="Collaboration / Role Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Message</label>
+              <textarea id="senderMessage" class="form-textarea" placeholder="Hello Pratha, I reviewed your Aurevix project and would like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span>Transmit Message</span>
+            </button>
+            <div id="formStatusMsg" style="margin-top: 1rem; font-size: 0.875rem; text-align: center; display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER
+  ====================================================================== -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <p>&copy; 2024 <span id="footerAuthor">Pratha More</span>. Self-Contained Portfolio Artifact.</p>
+      </div>
+      <div>
+        <a href="#hero" style="color: var(--accent); font-weight: 600;">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       CORE LOGIC: HYDRATION, THEME TOGGLE, AND NEURAL NET SIMULATOR
+  ====================================================================== -->
+  <script>
+    /* ------------------------------------------------------------------
+       1. PAGE HYDRATION FROM CONFIG (PORTFOLIO_DATA)
+    ------------------------------------------------------------------- */
+    function hydratePortfolio() {
+      const data = PORTFOLIO_DATA;
+
+      // Profile & Hero
+      document.title = `${data.profile.name} | AI & Machine Learning Portfolio`;
+      document.getElementById('navBrandName').textContent = data.profile.name;
+      document.getElementById('heroName').textContent = data.profile.name;
+      document.getElementById('heroTagline').textContent = data.profile.tagline;
+      document.getElementById('footerAuthor').textContent = data.profile.name;
+      document.getElementById('heroLocation').textContent = `• ${data.profile.location}`;
+      document.getElementById('heroBadge').textContent = data.profile.role.split('&')[0].trim();
+      
+      const resumeBtn = document.getElementById('resumeBtn');
+      if (data.profile.resumeUrl && data.profile.resumeUrl !== '#contact') {
+        resumeBtn.href = data.profile.resumeUrl;
+        resumeBtn.setAttribute('target', '_blank');
+      }
+
+      // Hero Socials
+      const socialsContainer = document.getElementById('heroSocialsContainer');
+      socialsContainer.innerHTML = `
+        <a href="${data.profile.socials.github}" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="${data.profile.socials.linkedin}" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="${data.profile.socials.kaggle}" target="_blank" rel="noopener noreferrer" class="hero-social-link" title="Kaggle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+          <span>Kaggle</span>
+        </a>
+        <a href="mailto:${data.profile.socials.email}" class="hero-social-link" title="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Email</span>
+        </a>
+      `;
+
+      // Hero Stats
+      const statsGrid = document.getElementById('statsGrid');
+      statsGrid.innerHTML = data.stats.map(s => `
+        <div class="stat-item">
+          <div class="stat-val">${s.value}</div>
+          <div class="stat-lbl">${s.label}</div>
+        </div>
+      `).join('');
+
+      // About Section
+      const aboutBio = document.getElementById('aboutBioText');
+      aboutBio.innerHTML = `
+        <p><strong>${data.profile.role}</strong> at <strong>${data.profile.institution}</strong> (${data.profile.year}).</p>
+        <p>${data.profile.bio}</p>
+        <p>Specializing in edge machine learning, 3D kinematic landmark estimation, and real-time inference optimization, with a passion for building software that directly enhances human autonomy and accessibility.</p>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+          <a href="#contact" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.5rem 1rem;">Let's Collaborate</a>
+        </div>
+      `;
+
+      // Focus Areas
+      const focusContainer = document.getElementById('focusCardsContainer');
+      const iconsMap = {
+        eye: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`,
+        message: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+        database: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`
+      };
+
+      focusContainer.innerHTML = data.focusAreas.map(f => `
+        <div class="focus-card">
+          <div class="focus-icon-box">${iconsMap[f.icon] || iconsMap.eye}</div>
+          <div class="focus-info">
+            <h4>${f.title}</h4>
+            <p>${f.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // Render Projects
+      renderProjects('all');
+
+      // Render Skills
+      const skillsGrid = document.getElementById('skillsGrid');
+      skillsGrid.innerHTML = data.skills.map(group => `
+        <div class="skill-card">
+          <h3 class="skill-category-title">${group.category}</h3>
+          <div class="skills-chip-group">
+            ${group.items.map(skill => `<span class="skill-badge">${skill}</span>`).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      // Render Timeline
+      const timelineContainer = document.getElementById('timelineContainer');
+      timelineContainer.innerHTML = data.timeline.map(item => `
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">${item.year}</span>
+              <span class="badge" style="font-size: 0.7rem;">${item.badge}</span>
+            </div>
+            <h3 class="timeline-title">${item.title}</h3>
+            <div class="timeline-org">${item.organization}</div>
+            <p class="timeline-desc">${item.description}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // Render Notes
+      const notesGrid = document.getElementById('notesGrid');
+      notesGrid.innerHTML = data.notes.map(note => `
+        <div class="note-card">
+          <div>
+            <div class="note-meta">
+              <span>${note.date}</span>
+              <span>${note.readTime}</span>
+            </div>
+            <h3 class="note-title">${note.title}</h3>
+            <p class="note-summary">${note.summary}</p>
+          </div>
+          <div class="note-footer">
+            <span class="badge" style="font-size: 0.7rem;">${note.tag}</span>
+            <a href="#notes" class="expand-toggle-btn" style="padding: 0;">Read Note &rarr;</a>
+          </div>
+        </div>
+      `).join('');
+
+      // Direct Contact Links
+      document.getElementById('contactEmailLink').textContent = data.profile.socials.email;
+      document.getElementById('contactEmailLink').href = `mailto:${data.profile.socials.email}`;
+      document.getElementById('contactLinkedInLink').href = data.profile.socials.linkedin;
+      document.getElementById('contactGitHubLink').href = data.profile.socials.github;
+    }
+
+    /* ------------------------------------------------------------------
+       2. PROJECTS RENDERING & EXPAND ACCORDION
+    ------------------------------------------------------------------- */
+    function renderProjects(filterCategory) {
+      const projectsGrid = document.getElementById('projectsGrid');
+      const filtered = PORTFOLIO_DATA.projects.filter(p => {
+        if (filterCategory === 'all') return true;
+        return p.category === filterCategory;
+      });
+
+      projectsGrid.innerHTML = filtered.map(p => `
+        <article class="project-card" id="card-${p.id}">
+          <div>
+            <div class="project-top">
+              <span class="project-category">${p.categoryLabel}</span>
+              <div class="project-links">
+                <a href="${p.github}" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub" aria-label="GitHub Repository for ${p.title}">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">${p.title}</h3>
+            <p class="project-subtitle">${p.subtitle}</p>
+
+            <div class="metric-badge">
+              <span class="metric-val">${p.metrics.highlight}</span>
+              <span class="metric-lbl">${p.metrics.details}</span>
+            </div>
+
+            <button class="expand-toggle-btn" onclick="toggleProjectExpand('${p.id}')" id="expandBtn-${p.id}">
+              <span>View Details & Approach</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+
+            <!-- Collapsible details drawer -->
+            <div class="project-expandable" id="expand-${p.id}">
+              <div class="expand-row">
+                <strong>The Problem:</strong>
+                <span>${p.problem}</span>
+              </div>
+              <div class="expand-row">
+                <strong>Approach & Architecture:</strong>
+                <span>${p.approach}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            ${p.tools.map(tool => `<span class="tag-chip">${tool}</span>`).join('')}
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function toggleProjectExpand(id) {
+      const card = document.getElementById(`card-${id}`);
+      const btn = document.getElementById(`expandBtn-${id}`);
+      const isExpanded = card.classList.contains('expanded');
+
+      if (isExpanded) {
+        card.classList.remove('expanded');
+        btn.querySelector('span').textContent = 'View Details & Approach';
+      } else {
+        card.classList.add('expanded');
+        btn.querySelector('span').textContent = 'Hide Details';
+      }
+    }
+
+    // Filter Buttons
+    document.getElementById('projectFilterGroup').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-chip')) return;
+      document.querySelectorAll('.filter-chip').forEach(btn => btn.classList.remove('active'));
+      e.target.classList.add('active');
+      renderProjects(e.target.dataset.filter);
+    });
+
+    /* ------------------------------------------------------------------
+       3. THEME TOGGLER (DARK / LIGHT / SYSTEM PREFERENCE)
+    ------------------------------------------------------------------- */
+    const themeToggleBtn = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        // Show Sun icon
+        themeIcon.innerHTML = `
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        `;
+      } else {
+        // Show Moon icon
+        themeIcon.innerHTML = `
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        `;
+      }
+    }
+
+    function initTheme() {
+      const stored = localStorage.getItem('portfolio_theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = stored || (systemDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', initialTheme);
+      updateThemeIcon(initialTheme);
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('portfolio_theme', next);
+      updateThemeIcon(next);
+      drawDecisionBoundary(); // redraw canvas with updated theme palette
+      drawLossChart();
+    });
+
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    /* ------------------------------------------------------------------
+       4. SIGNATURE INTERACTIVE DEMO: 2D NEURAL NETWORK TRAINER
+       - Input: 2D coordinates [x1, x2]
+       - Architecture: 2 inputs -> Hidden neurons (Tanh) -> 1 Sigmoid output
+       - Training: Binary cross-entropy with analytical backpropagation & SGD
+       - Visualization: Real-time decision boundary heatmap + loss curve
+    ------------------------------------------------------------------- */
+    class TinyNeuralNetwork {
+      constructor(inputSize = 2, hiddenSize = 8, outputSize = 1) {
+        this.inputSize = inputSize;
+        this.hiddenSize = hiddenSize;
+        this.outputSize = outputSize;
+        this.resetWeights();
+      }
+
+      resetWeights() {
+        // Xavier/Glorot-like uniform initialization
+        const scale1 = Math.sqrt(2.0 / (this.inputSize + this.hiddenSize));
+        this.W1 = Array.from({ length: this.inputSize }, () =>
+          Array.from({ length: this.hiddenSize }, () => (Math.random() * 2 - 1) * scale1)
+        );
+        this.b1 = new Array(this.hiddenSize).fill(0);
+
+        const scale2 = Math.sqrt(2.0 / (this.hiddenSize + this.outputSize));
+        this.W2 = Array.from({ length: this.hiddenSize }, () =>
+          Array.from({ length: this.outputSize }, () => (Math.random() * 2 - 1) * scale2)
+        );
+        this.b2 = new Array(this.outputSize).fill(0);
+      }
+
+      sigmoid(z) {
+        return 1 / (1 + Math.exp(-Math.max(-15, Math.min(15, z))));
+      }
+
+      tanh(z) {
+        return Math.tanh(Math.max(-10, Math.min(10, z)));
+      }
+
+      forward(x1, x2) {
+        // Hidden layer with Tanh
+        this.h = new Array(this.hiddenSize);
+        for (let j = 0; j < this.hiddenSize; j++) {
+          const z1 = x1 * this.W1[0][j] + x2 * this.W1[1][j] + this.b1[j];
+          this.h[j] = this.tanh(z1);
+        }
+
+        // Output layer with Sigmoid
+        let z2 = this.b2[0];
+        for (let j = 0; j < this.hiddenSize; j++) {
+          z2 += this.h[j] * this.W2[j][0];
+        }
+        this.yHat = this.sigmoid(z2);
+        return this.yHat;
+      }
+
+      trainBatch(data, learningRate) {
+        let totalLoss = 0;
+        const gradW1 = Array.from({ length: this.inputSize }, () => new Array(this.hiddenSize).fill(0));
+        const gradB1 = new Array(this.hiddenSize).fill(0);
+        const gradW2 = Array.from({ length: this.hiddenSize }, () => new Array(this.outputSize).fill(0));
+        let gradB2 = 0;
+
+        for (const pt of data) {
+          const pred = this.forward(pt.x, pt.y);
+          const y = pt.label;
+          
+          // Binary cross-entropy loss
+          const eps = 1e-7;
+          const loss = -(y * Math.log(pred + eps) + (1 - y) * Math.log(1 - pred + eps));
+          totalLoss += loss;
+
+          // dLoss / dZ2 = (yHat - y)
+          const delta2 = pred - y;
+          gradB2 += delta2;
+          for (let j = 0; j < this.hiddenSize; j++) {
+            gradW2[j][0] += delta2 * this.h[j];
+          }
+
+          // Backprop through hidden layer
+          for (let j = 0; j < this.hiddenSize; j++) {
+            const dtanh = 1 - this.h[j] * this.h[j];
+            const delta1 = delta2 * this.W2[j][0] * dtanh;
+            gradB1[j] += delta1;
+            gradW1[0][j] += delta1 * pt.x;
+            gradW1[1][j] += delta1 * pt.y;
+          }
+        }
+
+        const N = Math.max(1, data.length);
+        // Apply stochastic gradient updates
+        for (let j = 0; j < this.hiddenSize; j++) {
+          this.W2[j][0] -= (learningRate * gradW2[j][0]) / N;
+          this.b1[j] -= (learningRate * gradB1[j]) / N;
+          this.W1[0][j] -= (learningRate * gradW1[0][j]) / N;
+          this.W1[1][j] -= (learningRate * gradW1[1][j]) / N;
+        }
+        this.b2[0] -= (learningRate * gradB2) / N;
+
+        return totalLoss / N;
+      }
+    }
+
+    // Dataset Generators
+    function generateDataset(type, count = 120) {
+      const data = [];
+      if (type === 'circles') {
+        // Inner circle = 1, Outer circle = 0
+        for (let i = 0; i < count; i++) {
+          const isInner = i % 2 === 0;
+          const r = isInner ? Math.random() * 0.45 : 0.65 + Math.random() * 0.4;
+          const theta = Math.random() * Math.PI * 2;
+          data.push({
+            x: r * Math.cos(theta),
+            y: r * Math.sin(theta),
+            label: isInner ? 1 : 0
+          });
+        }
+      } else if (type === 'moons') {
+        // Two interleaving half-moons
+        for (let i = 0; i < count; i++) {
+          const isUpper = i % 2 === 0;
+          const theta = Math.random() * Math.PI;
+          const noiseX = (Math.random() - 0.5) * 0.15;
+          const noiseY = (Math.random() - 0.5) * 0.15;
+          if (isUpper) {
+            data.push({
+              x: Math.cos(theta) * 0.65 - 0.35 + noiseX,
+              y: Math.sin(theta) * 0.65 - 0.2 + noiseY,
+              label: 0
+            });
+          } else {
+            data.push({
+              x: 0.35 - Math.cos(theta) * 0.65 + noiseX,
+              y: 0.2 - Math.sin(theta) * 0.65 + noiseY,
+              label: 1
+            });
+          }
+        }
+      } else if (type === 'xor') {
+        for (let i = 0; i < count; i++) {
+          const x = (Math.random() * 2 - 1) * 0.9;
+          const y = (Math.random() * 2 - 1) * 0.9;
+          const label = (x * y > 0) ? 1 : 0;
+          data.push({ x, y, label });
+        }
+      } else if (type === 'spiral') {
+        for (let i = 0; i < count; i++) {
+          const label = i % 2;
+          const r = (i / count) * 0.9 + 0.1;
+          const theta = (i / count) * Math.PI * 3 + (label * Math.PI);
+          const noise = (Math.random() - 0.5) * 0.08;
+          data.push({
+            x: r * Math.cos(theta) + noise,
+            y: r * Math.sin(theta) + noise,
+            label
+          });
+        }
+      }
+      return data;
+    }
+
+    // Simulator State
+    let currentData = generateDataset('moons', 140);
+    let net = new TinyNeuralNetwork(2, 8, 1);
+    let isTraining = false;
+    let epochsTrained = 0;
+    let lossHistory = [];
+    let animId = null;
+
+    const boundaryCanvas = document.getElementById('boundaryCanvas');
+    const bCtx = boundaryCanvas.getContext('2d');
+    const lossCanvas = document.getElementById('lossCanvas');
+    const lCtx = lossCanvas.getContext('2d');
+
+    const lrSlider = document.getElementById('lrSlider');
+    const lrValue = document.getElementById('lrValue');
+    const hiddenSlider = document.getElementById('hiddenSlider');
+    const hiddenValue = document.getElementById('hiddenValue');
+    const datasetSelect = document.getElementById('datasetSelect');
+    const trainToggleBtn = document.getElementById('trainToggleBtn');
+    const trainBtnText = document.getElementById('trainBtnText');
+    const playIcon = document.getElementById('playIcon');
+    const stepBtn = document.getElementById('stepBtn');
+    const resetNetBtn = document.getElementById('resetNetBtn');
+    const epochCountDisplay = document.getElementById('epochCountDisplay');
+    const lossValueDisplay = document.getElementById('lossValueDisplay');
+    const simStatusBadge = document.getElementById('simStatusBadge');
+
+    // Controls bindings
+    lrSlider.addEventListener('input', (e) => {
+      lrValue.textContent = Number(e.target.value).toFixed(2);
+    });
+
+    hiddenSlider.addEventListener('input', (e) => {
+      hiddenValue.textContent = e.target.value;
+      net = new TinyNeuralNetwork(2, parseInt(e.target.value), 1);
+      epochsTrained = 0;
+      lossHistory = [];
+      drawDecisionBoundary();
+      drawLossChart();
+    });
+
+    datasetSelect.addEventListener('change', (e) => {
+      currentData = generateDataset(e.target.value, 140);
+      epochsTrained = 0;
+      lossHistory = [];
+      net.resetWeights();
+      drawDecisionBoundary();
+      drawLossChart();
+    });
+
+    // Custom data point addition on canvas click
+    boundaryCanvas.addEventListener('click', (e) => {
+      const rect = boundaryCanvas.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const clickY = e.clientY - rect.top;
+      // Convert canvas [0, 380] to normalized coords [-1.2, 1.2]
+      const nx = (clickX / boundaryCanvas.width) * 2.4 - 1.2;
+      const ny = 1.2 - (clickY / boundaryCanvas.height) * 2.4;
+      const label = e.shiftKey ? 1 : 0;
+      currentData.push({ x: nx, y: ny, label });
+      drawDecisionBoundary();
+    });
+
+    function toggleTraining() {
+      if (isTraining) {
+        isTraining = false;
+        trainBtnText.textContent = 'Resume Training';
+        simStatusBadge.textContent = 'Paused';
+        playIcon.innerHTML = `<polygon points="5 3 19 12 5 21 5 3"/>`;
+        if (animId) cancelAnimationFrame(animId);
+      } else {
+        isTraining = true;
+        trainBtnText.textContent = 'Pause Training';
+        simStatusBadge.textContent = 'Training Live';
+        playIcon.innerHTML = `<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>`;
+        loopSimulation();
+      }
+    }
+
+    trainToggleBtn.addEventListener('click', toggleTraining);
+
+    stepBtn.addEventListener('click', () => {
+      if (isTraining) toggleTraining();
+      stepSimulation(10);
+      drawDecisionBoundary();
+      drawLossChart();
+    });
+
+    resetNetBtn.addEventListener('click', () => {
+      if (isTraining) toggleTraining();
+      net.resetWeights();
+      epochsTrained = 0;
+      lossHistory = [];
+      epochCountDisplay.textContent = '0';
+      lossValueDisplay.textContent = '0.000';
+      simStatusBadge.textContent = 'Weights Reset';
+      drawDecisionBoundary();
+      drawLossChart();
+    });
+
+    function stepSimulation(steps = 1) {
+      const lr = parseFloat(lrSlider.value);
+      for (let s = 0; s < steps; s++) {
+        const loss = net.trainBatch(currentData, lr);
+        epochsTrained++;
+        if (epochsTrained % 2 === 0 || steps === 1) {
+          lossHistory.push(loss);
+          if (lossHistory.length > 150) lossHistory.shift();
+        }
+      }
+      epochCountDisplay.textContent = epochsTrained;
+      const latestLoss = lossHistory[lossHistory.length - 1] || 0;
+      lossValueDisplay.textContent = latestLoss.toFixed(4);
+    }
+
+    function loopSimulation() {
+      if (!isTraining) return;
+      stepSimulation(4);
+      drawDecisionBoundary();
+      drawLossChart();
+      animId = requestAnimationFrame(loopSimulation);
+    }
+
+    /* ------------------------------------------------------------------
+       CANVAS RENDERING: DECISION BOUNDARY & LOSS GRAPH
+    ------------------------------------------------------------------- */
+    function drawDecisionBoundary() {
+      const w = boundaryCanvas.width;
+      const h = boundaryCanvas.height;
+      const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+      
+      const res = 48; // Grid sampling resolution
+      const cellW = w / res;
+      const cellH = h / res;
+
+      // Draw background prediction heat map
+      for (let i = 0; i < res; i++) {
+        for (let j = 0; j < res; j++) {
+          const x = ((i + 0.5) / res) * 2.4 - 1.2;
+          const y = 1.2 - ((j + 0.5) / res) * 2.4;
+          const p = net.forward(x, y);
+
+          // Color interpolation: Class 0 (Teal/Emerald) vs Class 1 (Coral/Amber)
+          let r, g, b, alpha;
+          if (p < 0.5) {
+            const t = (0.5 - p) * 2; // [0..1]
+            if (isDark) {
+              r = Math.floor(0 + t * 0);
+              g = Math.floor(60 + t * 169);
+              b = Math.floor(60 + t * 93);
+              alpha = 0.25 + t * 0.4;
+            } else {
+              r = Math.floor(220 - t * 180);
+              g = Math.floor(245 - t * 70);
+              b = Math.floor(235 - t * 90);
+              alpha = 0.4 + t * 0.4;
+            }
+          } else {
+            const t = (p - 0.5) * 2; // [0..1]
+            if (isDark) {
+              r = Math.floor(80 + t * 160);
+              g = Math.floor(40 + t * 60);
+              b = Math.floor(100 + t * 140);
+              alpha = 0.25 + t * 0.4;
+            } else {
+              r = Math.floor(245 - t * 30);
+              g = Math.floor(225 - t * 120);
+              b = Math.floor(245 - t * 40);
+              alpha = 0.4 + t * 0.4;
+            }
+          }
+
+          bCtx.fillStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+          bCtx.fillRect(i * cellW, j * cellH, cellW + 1, cellH + 1);
+        }
+      }
+
+      // Draw coordinate axes
+      bCtx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.1)';
+      bCtx.lineWidth = 1;
+      bCtx.beginPath();
+      bCtx.moveTo(w / 2, 0);
+      bCtx.lineTo(w / 2, h);
+      bCtx.moveTo(0, h / 2);
+      bCtx.lineTo(w, h / 2);
+      bCtx.stroke();
+
+      // Overlay Scatter Points
+      for (const pt of currentData) {
+        const cx = ((pt.x + 1.2) / 2.4) * w;
+        const cy = ((1.2 - pt.y) / 2.4) * h;
+
+        bCtx.beginPath();
+        bCtx.arc(cx, cy, 5.5, 0, Math.PI * 2);
+        if (pt.label === 0) {
+          bCtx.fillStyle = '#00e599'; // Emerald
+        } else {
+          bCtx.fillStyle = '#a855f7'; // Purple/Violet
+        }
+        bCtx.fill();
+        bCtx.lineWidth = 1.5;
+        bCtx.strokeStyle = isDark ? '#ffffff' : '#0f172a';
+        bCtx.stroke();
+      }
+    }
+
+    function drawLossChart() {
+      const w = lossCanvas.width;
+      const h = lossCanvas.height;
+      const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+
+      lCtx.clearRect(0, 0, w, h);
+
+      // Background grid lines
+      lCtx.strokeStyle = isDark ? '#1e293b' : '#e2e8f0';
+      lCtx.lineWidth = 1;
+      for (let y = 15; y < h; y += 25) {
+        lCtx.beginPath();
+        lCtx.moveTo(0, y);
+        lCtx.lineTo(w, y);
+        lCtx.stroke();
+      }
+
+      if (lossHistory.length < 2) return;
+
+      const maxLoss = Math.max(1.0, ...lossHistory);
+      const minLoss = 0;
+
+      // Draw loss line
+      lCtx.beginPath();
+      for (let i = 0; i < lossHistory.length; i++) {
+        const x = (i / (lossHistory.length - 1)) * w;
+        const normY = (lossHistory[i] - minLoss) / (maxLoss - minLoss);
+        const y = h - normY * (h - 20) - 10;
+        if (i === 0) lCtx.moveTo(x, y);
+        else lCtx.lineTo(x, y);
+      }
+
+      lCtx.strokeStyle = '#00e599';
+      lCtx.lineWidth = 2.2;
+      lCtx.stroke();
+
+      // Subtle gradient fill under loss line
+      lCtx.lineTo(w, h);
+      lCtx.lineTo(0, h);
+      lCtx.closePath();
+      const grad = lCtx.createLinearGradient(0, 0, 0, h);
+      grad.addColorStop(0, 'rgba(0, 229, 153, 0.25)');
+      grad.addColorStop(1, 'rgba(0, 229, 153, 0)');
+      lCtx.fillStyle = grad;
+      lCtx.fill();
+    }
+
+    /* ------------------------------------------------------------------
+       5. CONTACT FORM HANDLER (CLIENT-SIDE SAFE)
+    ------------------------------------------------------------------- */
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('senderName').value;
+      const email = document.getElementById('senderEmail').value;
+      const subject = document.getElementById('senderSubject').value;
+      const message = document.getElementById('senderMessage').value;
+      const statusMsg = document.getElementById('formStatusMsg');
+
+      // Compose mailto link as direct fallback
+      const mailtoUri = `mailto:${PORTFOLIO_DATA.profile.socials.email}?subject=${encodeURIComponent(subject + " [from " + name + "]")}&body=${encodeURIComponent(message + "\n\nContact Email: " + email)}`;
+
+      statusMsg.style.display = 'block';
+      statusMsg.style.color = 'var(--accent)';
+      statusMsg.textContent = 'Opening your email client to dispatch message...';
+
+      setTimeout(() => {
+        window.location.href = mailtoUri;
+        statusMsg.textContent = 'Draft created in your mail client! If it did not open, email prathamore8806@gmail.com directly.';
+      }, 600);
+    }
+
+    /* ------------------------------------------------------------------
+       6. INITIALIZATION ON DOM READY
+    ------------------------------------------------------------------- */
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      hydratePortfolio();
+      drawDecisionBoundary();
+      drawLossChart();
+    });
+  </script>
+</body>
+</html>

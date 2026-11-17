@@ -1,0 +1,14 @@
+# Ignore Python desktop app and backend dependencies from Vercel deployment
+requirements.txt
+PythonApplication2/
+*.py
+*.pyproj
+*.sln
+*.spec
+*.bat
+*.docx
+*.db
+*.sql
+*.zip
+.env
+.env.example
