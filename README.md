@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Aurevix 
-=======
 # Aurevix
 >>>>>>> origin/main
 ### AI-Powered Multimodal Gesture & Voice Control Interaction Platform
@@ -177,15 +174,9 @@ Developed as part of the Final Year Capstone Project (Academic Year 2025–2026)
 
 | Name | Roll No. | Enrollment ID | Role |
 | :--- | :---: | :---: | :--- |
-<<<<<<< HEAD
-| **Pratha More** | 64 | EU2256002 | Computer Vision, System Architecture & GUI |
-| [**Shirisha Vakiti**](https://github.com/Shirishaaa08) | 65 | EU2256001 | Cloud Database & OAuth Authentication |
-| **Fraser Boban** | 66 | EU2256003 | Speech Processing & OS Automation |
-=======
 | [**Pratha More**](https://github.com/Prathaaa8806) | 64 | EU2256002 | Computer Vision, System Architecture & GUI |
 | [**Shirisha Vakiti**](https://github.com/Shirishaaa08) | 65 | EU2256001 | Cloud Database & OAuth Authentication |
 | [**Fraser Boban**](https://github.com/fraserboban-creator) | 66 | EU2256003 | Speech Processing & OS Automation |
->>>>>>> origin/main
 
 ---
 
